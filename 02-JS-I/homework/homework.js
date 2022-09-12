@@ -7,7 +7,7 @@ const nuevaString = "Hola";
 const nuevoNum = 35;
 
 // Crea una variable booleana:
-const nuevoBool = 35<34;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1.05;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -67,36 +67,21 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 == str2) {
-    return true;
-  }
-  if else {
-    return false;
-  }
-}
+  return str1.length==str2.lenghth;}
+
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num <90) {
- return true;
-} 
-if else {
-  return false;
-}
+  return num<90;
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num >50) {
-    return true;
-  }
-  if else {
-    return false;
-  }
+  return num>50;
   }
   
 
@@ -110,33 +95,23 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (Math.esPar == num) {
-    return true;
-  }
-  if else {
-    return false;
-  }
-  }
+  return (num%2==0);}
+
   
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (Math.esImpar == num) {
-    return true;
-  }
-  if else {
-    return false;
-  }
-  
+  if (num % 2 == 0) return false;
+  else return true;  
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return Math.elevarAlCuadrado (num);
+  return (num*num);
 }
 
 function elevarAlCubo(num) {
@@ -174,10 +149,10 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if Math.sign(numero)== 1 {
+if (Math.sign(numero)== 1) {
   return console.log ('Es positivo');
 }
-if Math.sign(numero)== -1 {
+if (Math.sign(numero)== -1) {
   return console.log ('Es negativo');
 }}
 
@@ -192,7 +167,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return console.log ('nombre' + ' apellido');
+  return console.log (nombre + ' '+ apellido);
 }
 
 function obtenerSaludo(nombre) {
@@ -205,21 +180,21 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  return Math.obtenerAreaRectangulo(alto, ancho);
+  return (alto*ancho);
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return Math.retornarPerimetro(lado*4);
+  return (lado*4);
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
- return Math.areaDelTriangulo (base, altura);
+ return (base*altura/2);
 }
 
 
@@ -227,7 +202,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-return (euro)*1.2;  
+return (euro*1.2);  
 }
 
 
@@ -237,18 +212,9 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  {
-      if letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u' || true {
-
-    return console.log ('Es vocal');
-  }
-  if  letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u' || false {
-    return console.log ('Dato incorrecto');
-  }
-  if letra.lenght > 1 {
-    return console.log ('Dato incorrecto')
-
-  }
+  if (letra.length>1) {return 'Dato incorrecto';}
+if (letra === 'a'|| letra ==='e'|| letra === 'i'|| letra === 'o'|| letra === 'u') {return 'Es vocal'};
+{return 'Dato incorrecto'}} 
 
 
 
